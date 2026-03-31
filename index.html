@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UGLY METRONOME</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="metronome-case">
+    <div class="metronome-top">
+      <div class="logo-area">
+        <span class="ugly-logo">🎵 UGLY 🎵</span>
+      </div>
+    </div>
+    
+    <div class="pendulum-window">
+      <div class="weight-rod">
+        <div class="weight" id="weight"></div>
+      </div>
+      <div class="pendulum" id="pendulum">
+        <div class="pendulum-arm"></div>
+        <div class="pendulum-bob"></div>
+      </div>
+    </div>
+    
+    <div class="tempo-scale">
+      <span class="scale-mark" style="left: 10%">40</span>
+      <span class="scale-mark" style="left: 30%">80</span>
+      <span class="scale-mark" style="left: 50%">120</span>
+      <span class="scale-mark" style="left: 70%">160</span>
+      <span class="scale-mark" style="left: 90%">200</span>
+    </div>
+    
+    <div class="tempo-slider-wrap">
+      <input type="range" id="tempoSlider" min="40" max="208" value="120" orient="vertical">
+    </div>
+    
+    <div class="face-plate">
+      <div class="bpm-display" id="bpmDisplay">120</div>
+      <div class="bpm-label">BPM</div>
+    </div>
+    
+    <button id="startBtn" class="start-btn">START</button>
+    
+    <div class="brand">Made in<br>UGLYLAND</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
